@@ -1,0 +1,7 @@
+[
+{ "_id" : { "$oid" : "643a7194f06acc9966df4c57" }, "date" : "2023-04-15 09:42:44", "url" : "https://www.google.com/setprefs?sig=0_T45mZKb0UG8mO0lXK-GFrX41vus%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwjwh9uQzKv-AhUKQ94KHfy6AnYQ2ZgBCBQ", "content" : "", "type" : "" },
+{ "_id" : { "$oid" : "643aab49cdd89800330e58c5" }, "date" : "2023-04-15 13:48:57", "url" : "https://earni.fi/?utm_source=pyme&utm_medium=quest&utm_campaign=enter_address", "content" : "bkbjkb", "type" : "Malware" },
+{ "_id" : { "$oid" : "643aab91cdd89800330e58c6" }, "date" : "2023-04-15 13:50:09", "url" : "https://earni.fi/?utm_source=pyme&utm_medium=quest&utm_campaign=enter_address", "content" : "dsaxas", "type" : "Fake" },
+{ "_id" : { "$oid" : "643aaba4cdd89800330e58c7" }, "date" : "2023-04-15 13:50:28", "url" : "https://earni.fi/account?modalOpen=true", "content" : "", "type" : "" },
+{ "_id" : { "$oid" : "643aabbecdd89800330e58c8" }, "date" : "2023-04-15 13:50:54", "url" : "https://earni.fi/account?modalOpen=true", "content" : "", "type" : "" }
+]
