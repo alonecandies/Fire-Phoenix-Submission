@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Home</title>
+    {% include "./dup_components/header.html" %}
+    <link   rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/button.css">
+    <style>
+        .mb-3 {
+            margin-bottom: 0rem!important;
+        }
+        .h1-index {
+            position: absolute;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-size: 40px;
+            z-index: 2;
+            color: #080808;
+        }
+        .background-image {
+
+            background-image: url('https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');           
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            background-position: center;  
+            padding-top: -10px;
+            height: 100%;
+            width: 100%;   
+            position: relative;
+        }
+
+        .filter-blur {
+            backdrop-filter: blur(5px);
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+      </style>
+
+</head>
+    
+
+<body class="d-flex flex-column h-100">
+    {% include "./dup_components/navbar.html" %}
+    <div class="container-fluid background-image">   
+        
+        <div class="filter-blur"></div>
+        <div style="padding: 20% ;height: 100%; width: 100%; border: none;  z-index: 2; " >
+            <h1 class="h1-index" align="center" style="position: relative;"> 
+                <strong>COMMON AWS CLOUD ATTACK SIMULATION</strong>
+            </h1>
+            <p align="center" style="margin: 5rem; z-index: 2; position: relative;">
+                <a class="button2 p-4 fs-5 w-50" align="center" style="z-index: 2; position: relative;" href="/scenario_list" role="button">Scenario list</a>
+            </p> 
+        
+            <p align="center" style="margin: 5rem; font-size: 18px; z-index: 2; position: relative;">
+                <strong>Application Security Training and Cloud Security Education through Interactive Learning</strong>
+            </p>
+
+        </div>
+    </div>
+
+
+    {% include "./dup_components/footer.html" %}
+
+</body>
+
+</html>

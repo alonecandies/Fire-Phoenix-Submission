@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    {% include "./dup_components/header.html" %}
+    <script src="https://cdn.tiny.cloud/1/805grlw77a8l3uz2maz5l08hkv3upie9t1darvkphug7zpo2/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
+
+    <script src="/static/js/tinymce.js"></script>
+
+<!--    <script>-->
+<!--        tinymce.init({-->
+<!--            selector: 'textarea#description',-->
+<!--            skin: 'bootstrap',-->
+<!--            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',-->
+<!--            toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist backcolor code | link image media | removeformat codesample image link lists media searchreplace table',-->
+<!--            menubar: false,-->
+<!--        });-->
+<!--    </script>-->
+
+    <title>Report Phishing URL</title>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  
+    <script src="/static/js/checkbox.js"></script>
+    <script src="/static/js/admin.js"></script>
+
+</head>
+<body class="d-flex flex-column h-100">
+{% include "./dup_components/navbar.html" %}
+  <div class="container card form-group mt-4" style="width: 800px">
+    <span class="align-content-around">
+      <h3 style="text-align: center;color: rgb(255, 119, 0); margin: 25px">Report a Malicious URL</h3>
+    </span>
+
+    <form class="row g-3" action="javascript:void(0)" onsubmit="reportURL(this)">
+      <div class="row-md-12">
+
+        <input type="text" class="form-control" id="url" placeholder="Enter URL you wanna report..." required>
+
+      </div>
+
+      <div class="col-md-12">
+        <label for="floatingTextarea" class="form-label">Description</label>
+        <input id="description" class="form-control" style="height: 50px;" placeholder="Leave a description here" required>
+
+      </div>
+    <div class="container" >
+        <label for="floatingTextarea" class="form-label">Choose malicious content type</label>
+        <div class="row" style="margin-left: 50px">
+            <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="content_type" id="content_type" value="Scam" checked>
+                <label class="form-check-label" for="content_type">
+                    Scam
+                </label>
+            </div>
+            <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="content_type" id="exampleRadios2" value="Dangerous link" checked>
+                <label class="form-check-label" for="exampleRadios2">
+                    Dangerous link
+                </label>
+            </div>
+            <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="content_type" id="exampleRadios3" value="Phishing" checked>
+                <label class="form-check-label" for="exampleRadios3">
+                    Phishing
+                </label>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 50px">
+            <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="content_type" id="exampleRadios4" value="Bad sensitive content" checked>
+                <label class="form-check-label" for="exampleRadios4">
+                    Sensitive content
+                </label>
+            </div>
+            <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="content_type" id="exampleRadios5" value="Impersonate Fake" checked>
+                <label class="form-check-label" for="exampleRadios5">
+                    Impersonate Fake
+                </label>
+            </div>
+            <div class="col-md-3">
+                <input class="form-check-input" type="radio" name="content_type" id="exampleRadios6" value="Other" checked>
+                <label class="form-check-label" for="exampleRadios6">
+                    Other
+                </label>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+      <div class="col-12 mb-3" style="margin-top:50px">
+
+        <input class="form-check-input" type="checkbox" id="myCheck" onchange="run()" required>
+        <label class="form-check-label" for="flexCheckIndeterminate">
+          I agree to the Terms of Policy.
+        </label>
+
+      </div>
+
+  <div id="result" autofocus ></div>
+
+  <div class="d-grid gap-2 col-5 mx-auto my-4">
+    <button type="submit" class="btn btn-primary">Send Report</button>
+    <a href="/" class="btn btn-danger">Back</a>
+  </div>
+</form>
+  </div>
+
+</body>
+{% include "./dup_components/footer.html" %}
+</html>

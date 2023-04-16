@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    {% include "./dup_components/header.html" %}
+    <title>Home</title>
+    <script src="/static/js/user.js"></script>
+    <script src="/static/js/checkbox.js"></script>
+    <!-- <link rel="stylesheet" href="/static/css/custom-table.css"> -->
+</head>
+<body class="d-flex flex-column h-100">
+    {% include "./dup_components/navbar.html" %}
+
+    <div class="container-lg">
+        <div class="container-fluid" style="padding-top: 20px;">
+            <h1 style="text-align: center; " >Welcome to FirePhoeniX </h1>
+
+            <div class="row" style="margin: 75px">
+            <form class="form-group mb-3 mt-md-4" action="javascript:void(0)" onsubmit="check_url(this)">
+              <div class="d-flex justify-content-between mb-3 ">
+<!--                <div class="form-group d-flex flex-row">-->
+                  <input type="search" class="form-control" id="url" name="url" placeholder="Please enter URL you wanna check for safety..." aria-label="Search" required>
+                  <button type="submit" class="btn btn-light ms-2"><i class="fa-solid fa-magnifying-glass fa-lg text-bold"></i></button>
+<!--                </div>-->
+              </div>
+
+                <div id="result"></div>
+                <div id="userTable">
+                    <table class="table table-striped table-hover table-responsive" id="table">
+                    </table>
+                </div>
+
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+<!--    <script>list_user()</script>-->
+    {% include "./dup_components/footer.html" %}
+</body>
+</html>

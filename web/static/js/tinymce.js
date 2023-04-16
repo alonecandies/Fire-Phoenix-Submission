@@ -1,0 +1,20 @@
+tinymce.init({
+    selector: 'textarea#description',
+    skin: 'bootstrap',
+    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount code',
+    toolbar: 'h1 h2 bold italic strikethrough blockquote bullist numlist table emoticons backcolor | link image media | codesample searchreplace code | removeformat',
+    codesample_languages: [
+        {text: 'HTML/XML', value: 'markup'},
+        {text: 'JavaScript', value: 'javascript'},
+        {text: 'CSS', value: 'css'},
+        {text: 'PHP', value: 'php'},
+        {text: 'Ruby', value: 'ruby'},
+        {text: 'Python', value: 'python'},
+        {text: 'Java', value: 'java'},
+        {text: 'C', value: 'c'},
+        {text: 'C#', value: 'csharp'},
+        {text: 'C++', value: 'cpp'},
+        {text: 'Bash', value: 'bash'},
+    ],
+    menubar: false,
+});
