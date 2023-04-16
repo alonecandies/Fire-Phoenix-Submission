@@ -1,0 +1,34 @@
+{
+  "name": "Fire Phoenix",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Fire Phoenix",
+  "icons": {
+    "16": "favicon.ico"
+  },
+  "background": {
+    "scripts": ["background.bundle.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.bundle.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": ["inpage.js"],
+  "permissions": ["storage", "activeTab", "alarms", "tabs", "contextMenus"],
+  "options_page": "options.html",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "img/logo.png",
+      "32": "img/logo.png",
+      "48": "img/logo.png",
+      "128": "img/logo.png"
+    }
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}

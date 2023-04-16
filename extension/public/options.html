@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+
+  <!-- OGP -->
+  <meta property="og:url" content="%PUBLIC_URL%" />
+  <meta name="title" content="Fire Phoenix">
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Fire Phoenix" />
+  <meta property="og:image" content="%PUBLIC_URL%/img/logo.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- OGP for Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@FirePhoenix" />
+  <meta name="twitter:creator" content="@FirePhoenix" />
+  <!-- END OGP -->
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/logo.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <title>Fire Phoenix</title>
+  <style>
+    .walletconnect-modal__mobile__toggle {
+      display: none !important;
+    }
+
+    .Toastify__progress-bar--success {
+      background: #1DE9B6 !important;
+    }
+
+    :root {
+      --toastify-icon-color-success: #1DE9B6 !important;
+    }
+  </style>
+  <!-- <script>
+    !function (n, e) { var t, o, i, c = [], f = { passive: !0, capture: !0 }, r = new Date, a = "pointerup", u = "pointercancel"; function p(n, c) { t || (t = c, o = n, i = new Date, w(e), s()) } function s() { o >= 0 && o < i - r && (c.forEach(function (n) { n(o, t) }), c = []) } function l(t) { if (t.cancelable) { var o = (t.timeStamp > 1e12 ? new Date : performance.now()) - t.timeStamp; "pointerdown" == t.type ? function (t, o) { function i() { p(t, o), r() } function c() { r() } function r() { e(a, i, f), e(u, c, f) } n(a, i, f), n(u, c, f) }(o, t) : p(o, t) } } function w(n) { ["click", "mousedown", "keydown", "touchstart", "pointerdown"].forEach(function (e) { n(e, l, f) }) } w(n), self.perfMetrics = self.perfMetrics || {}, self.perfMetrics.onFirstInputDelay = function (n) { c.push(n), s() } }(addEventListener, removeEventListener);
+  </script> -->
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root" class="root-options"></div>
+  <!-- <script>
+    // The perfMetrics object is created by the code that goes in <head>.
+    perfMetrics.onFirstInputDelay(function (delay, evt) {
+      try {
+
+        ga('send', 'event', {
+          eventCategory: 'Perf Metrics',
+          eventAction: 'first-input-delay',
+          eventLabel: evt.type,
+          // Event values must be an integer.
+          eventValue: Math.round(delay),
+          // Exclude this event from bounce rate calculations.
+          nonInteraction: true,
+        });
+      } catch (e) {
+        console.log(e)
+      }
+    });
+  </script> -->
+</body>
+
+</html>
